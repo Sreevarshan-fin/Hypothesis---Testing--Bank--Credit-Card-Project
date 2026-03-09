@@ -177,19 +177,107 @@ Observed effect size: 0.49
 
 Since the observed effect is **higher than the planned detectable effect**, the experiment was **properly powered and the campaign impact is meaningful**.
 
+---
 
-### Hypothesis Testing
+# Experimental Testing
 
-A **two-sample Z-test** was performed.
+## a) Hypothesis Testing Using Critical Z-Value
 
-Results:
+### Z-Score Calculation
 
-* p-value < 0.05
-* Null hypothesis rejected
+Formula:
 
-Conclusion:
+```python
+Z = (mean_test − mean_control) / √((sd_control²/n) + (sd_test²/n))
+```
 
-The new campaign produced a **statistically significant improvement in customer spending behavior**.
+Python implementation:
+
+```python
+a = (control_std**2 / sample_size)
+b = (test_std**2 / sample_size)
+
+z_score = (test_mean - control_mean) / np.sqrt(a + b)
+z_score
+```
+
+Result:
+
+```
+Z_score = 2.7466
+```
+
+### Critical Z-Value (Right-Tailed Test)
+
+For significance level **α = 0.05**
+
+```python
+critical_z = st.norm.ppf(1 - alpha)
+critical_z
+```
+
+Result:
+
+```
+Critical_Z ≈ 1.645
+```
+
+### Decision Rule
+
+```
+If Z_score > Critical_Z → Reject H₀
+```
+
+```
+2.7466 > 1.645
+```
+
+✅ **Result:** Reject the null hypothesis.
+The campaign produced a **statistically significant uplift**.
+
+---
+
+# b) Hypothesis Testing Using P-Value
+
+### P-Value Calculation
+
+For a right-tailed test:
+
+```python
+p_value = 1 - st.norm.cdf(z_score)
+p_value
+```
+
+Result:
+
+```
+p_value ≈ 0.0030
+```
+
+### Decision Rule
+
+```
+If p_value < α (0.05) → Reject H₀
+```
+
+```
+0.003 < 0.05
+```
+
+✅ **Result:** Reject the null hypothesis.
+
+The campaign effect is **statistically significant**.
+
+---
+
+# Conclusion
+
+Both methods confirm the same result:
+
+* **Z-Test:** Z_score > Critical_Z
+* **P-Value:** p_value < 0.05
+
+Therefore, the **new campaign significantly increased customer spending** compared to the control group.
 
 ---
 
