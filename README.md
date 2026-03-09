@@ -74,6 +74,12 @@ This suggested a potential **untapped opportunity for targeted credit card campa
 
 ## 2. Experiment Design (A/B Testing)
 
+ ### Campaign  architecture
+ 
+ <img width="1391" height="507" alt="image" src="https://github.com/user-attachments/assets/a2bb8d02-61cc-4076-9b2b-5328a90d46af" />
+
+
+
 To validate the campaign strategy, a controlled experiment was designed.
 
 ### Hypothesis
