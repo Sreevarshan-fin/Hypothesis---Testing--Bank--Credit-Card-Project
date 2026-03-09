@@ -10,7 +10,7 @@ Statistical analysis, including hypothesis testing and effect size measurement, 
 
 ---
 
-# Problem Statement
+## Problem Statement
 
 A growing bank wanted to expand its credit card business and increase market penetration.
 
@@ -26,7 +26,7 @@ The goal was to use **data-driven experimentation** instead of assumptions to de
 
 ---
 
-# Dataset
+## Dataset
 
 The analysis used three related datasets:
 
@@ -49,11 +49,11 @@ These datasets allowed linking **customer demographics, credit behavior, and spe
 
 ---
 
-# Solution Approach
+## Solution Approach
 
 The project followed **two main phases**.
 
-## 1. Exploratory Data Analysis (EDA)
+#### 1. Exploratory Data Analysis (EDA)
 
 Initial analysis focused on understanding customer behavior.
 
@@ -74,7 +74,7 @@ This suggested a potential **untapped opportunity for targeted credit card campa
 
 ---
 
-## 2. Experiment Design (A/B Testing)
+#### 2. Experiment Design (A/B Testing)
 
  #### Campaign  architecture
  
@@ -181,7 +181,7 @@ Since the observed effect is **higher than the planned detectable effect**, the 
 
 ---
 
-# Experimental Testing
+## Experimental Testing
 
 ### a) Hypothesis Testing Using Critical Z-Value
 
