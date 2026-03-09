@@ -181,9 +181,9 @@ Since the observed effect is **higher than the planned detectable effect**, the 
 
 # Experimental Testing
 
-## a) Hypothesis Testing Using Critical Z-Value
+### a) Hypothesis Testing Using Critical Z-Value
 
-### Z-Score Calculation
+##### Z-Score Calculation
 
 Formula:
 
@@ -207,7 +207,7 @@ Result:
 Z_score = 2.7466
 ```
 
-### Critical Z-Value (Right-Tailed Test)
+##### Critical Z-Value (Right-Tailed Test)
 
 For significance level **α = 0.05**
 
@@ -222,7 +222,7 @@ Result:
 Critical_Z ≈ 1.645
 ```
 
-### Decision Rule
+##### Decision Rule
 
 ```
 If Z_score > Critical_Z → Reject H₀
@@ -237,9 +237,9 @@ The campaign produced a **statistically significant uplift**.
 
 ---
 
-# b) Hypothesis Testing Using P-Value
+### b) Hypothesis Testing Using P-Value
 
-### P-Value Calculation
+##### P-Value Calculation
 
 For a right-tailed test:
 
